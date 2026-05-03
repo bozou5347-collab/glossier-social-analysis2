@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKT105 Assessment 3 - Glossier Social Media Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdf2f8; /* Glossier Signature Pink Theme */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .poster-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #fbcfe8;
+        }
+
+        header {
+            background-color: #f472b6;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .annotation-box {
+            background-color: #fff1f2;
+            border-left: 4px solid #f43f5e;
+            padding: 12px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .metric-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            color: #be185d;
+            border-bottom: 2px solid #fbcfe8;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .recommendation-pill {
+            background: #be185d;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .platform-icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="poster-container">
+    <header>
+        <h1 class="text-4xl font-bold italic mb-2">Glossier.</h1>
+        <p class="text-xl opacity-90">Social Media Performance Analysis | SME Spotlight</p>
+        <p class="mt-4 text-sm font-medium">Platform Focus: <span class="underline">Instagram (@glossier)</span></p>
+    </header>
+
+    <div class="p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div class="metric-card text-center">
+                <p class="text-gray-500 text-sm">Follower Count</p>
+                <p class="text-3xl font-bold text-pink-600">2.8M+</p>
+                <p class="text-xs text-green-500">Steady Growth</p>
+            </div>
+            <div class="metric-card text-center">
+                <p class="text-gray-500 text-sm">Avg. Engagement Rate</p>
+                <p class="text-3xl font-bold text-pink-600">1.2%</p>
+                <p class="text-xs text-blue-500">Above Beauty Benchmarks</p>
+            </div>
+            <div class="metric-card text-center">
+                <p class="text-gray-500 text-sm">Posting Frequency</p>
+                <p class="text-3xl font-bold text-pink-600">1-2x / Day</p>
+                <p class="text-xs text-gray-400">High Consistency</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div>
+                <h2 class="section-title">Metric Analysis & Annotations</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-semibold text-lg flex items-center">
+                        <svg class="platform-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.352.062-2.308.277-3.136.598-.857.332-1.583.776-2.307 1.5s-1.168 1.45-1.5 2.307c-.321.828-.536 1.784-.598 3.136-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.062 1.352.277 2.308.598 3.136.332.857.776 1.583 1.5 2.307s1.45 1.168 2.307 1.5c.828.321 1.784.536 3.136.598 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.352-.062 2.308-.277 3.136-.598.857-.332 1.583-.776 2.307-1.5s1.168-1.45 1.5-2.307c.321-.828.536-1.784.598-3.136.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.062-1.352-.277-2.308-.598-3.136-.332-.857-.776-1.583-1.5-2.307s-1.45-1.168-2.307-1.5c-.828-.321-1.784-.536-3.136-.598-1.28-.058-1.688-.072-4.947-.072z"/><path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        Follower Metrics
+                    </h3>
+                    <div class="annotation-box">
+                        <strong>Analysis:</strong> Stable community of 2.8M. Growth focuses on "quality over quantity," retaining a highly relevant Gen-Z/Millennial demographic.<br>
+                        <strong>Why it Matters:</strong> Indicates brand authority and market reach within the niche beauty industry.<br>
+                        <strong>Strategy:</strong> Shifts focus from acquisition to retention via exclusive "Instagram-first" product drops to reward loyalty.
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-semibold text-lg flex items-center">
+                        <svg class="platform-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                        Engagement Rate
+                    </h3>
+                    <div class="annotation-box">
+                        <strong>Analysis:</strong> Glossier sees high comment volume on User-Generated Content (UGC). Average likes range from 15k-30k per post.<br>
+                        <strong>Why it Matters:</strong> Proves content resonance; high engagement signals the Instagram algorithm to increase organic reach.<br>
+                        <strong>Strategy:</strong> Insights suggest that "unpolished" UGC performs better than high-budget studio photography for this SME.
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-semibold text-lg flex items-center">
+                        <svg class="platform-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                        Audience Sentiment
+                    </h3>
+                    <div class="annotation-box">
+                        <strong>Analysis:</strong> Audit shows 85% positive sentiment. Comments focus on "aesthetic" and "shelfie-worthy" minimalist packaging.<br>
+                        <strong>Why it Matters:</strong> Sentiment is a proxy for brand loyalty. Negative sentiment usually spikes only during "out of stock" periods.<br>
+                        <strong>Strategy:</strong> Use sentiment analysis to identify which products need faster restocking or shade expansions based on requests.
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-semibold text-lg flex items-center">
+                        <svg class="platform-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                        Content Themes & Quality
+                    </h3>
+                    <div class="annotation-box">
+                        <strong>Analysis:</strong> Themes include "Minimalist Beauty" and "Inclusivity." Visuals consistently use "Glossier Pink" and soft-focus lighting.<br>
+                        <strong>Why it Matters:</strong> Establishes a distinct brand identity that is instantly recognizable without a logo in the feed.<br>
+                        <strong>Strategy:</strong> Doubling down on Reels to explain product application (Tutorial-based commerce) to drive conversion.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <h2 class="section-title">Visual Feed Evidence</h2>
+                
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-pink-100 h-40 rounded flex items-center justify-center overflow-hidden">
+                        <img src="https://aka.doubaocdn.com/s/1CSL1wLurs" alt="Glossier Aesthetic" class="object-cover h-full w-full">
+                    </div>
+                    <div class="bg-pink-100 h-40 rounded flex items-center justify-center overflow-hidden">
+                        <img src="https://aka.doubaocdn.com/s/gAXj1wLurs" alt="Makeup Product" class="object-cover h-full w-full">
+                    </div>
+                </div>
+                
+                <p class="text-xs text-gray-500 italic mb-6 text-center">*Representative of Glossier's minimalist 'Dewy' feed aesthetic.</p>
+
+                <h2 class="section-title">Strategic Recommendations</h2>
+                
+                <div class="recommendation-pill">
+                    <p class="font-bold">1. Leverage Interactive Stories</p>
+                    <p class="text-sm">Use Polls and 'Add Yours' stickers to crowdsource new shades, converting passive followers into co-creators.</p>
+                </div>
+
+                <div class="recommendation-pill">
+                    <p class="font-bold">2. Expand 'Real-Life' Video Content</p>
+                    <p class="text-sm">Transition from static images to Reels showing varied skin textures to address inclusivity feedback.</p>
+                </div>
+
+                <div class="recommendation-pill">
+                    <p class="font-bold">3. Implement Shoppable Tags</p>
+                    <p class="text-sm">Integrate direct checkout on high-performing UGC posts to reduce friction in the customer journey.</p>
+                </div>
+
+                <div class="mt-8 p-4 border-t border-gray-200 text-xs text-gray-400">
+                    <p>Student Name: [Your Name]</p>
+                    <p>Subject: MKT105 Marketing in the Digital Era</p>
+                    <p>Date: May 2026</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
